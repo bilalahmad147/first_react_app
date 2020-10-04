@@ -1,14 +1,12 @@
 import React from 'react';
 import './App.css';
-import List from './List';
+import Form from './Components/Form';
 
 function App() {
 
-  let className = "App"
-
   return (
-    <div className={`list1 ${className}`}>
-      <List />
+    <div className="App">
+      <Form />
     </div>
   );
 }
