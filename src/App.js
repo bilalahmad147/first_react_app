@@ -1,17 +1,14 @@
 import React from 'react';
 import './App.css';
-import CounterClass from './Components/CounterClass';
-import CounterFunction from './Components/CounterFunction';
-import Hello from "./Components/Hello"
-import Welcome from './Components/Welcome';
+import List from './List';
 
 function App() {
+
+  let className = "App"
+
   return (
-    <div className="App">
-      <CounterFunction />
-      <CounterClass />
-      {/* <Hello />
-      <Welcome /> */}
+    <div className={`list1 ${className}`}>
+      <List />
     </div>
   );
 }
