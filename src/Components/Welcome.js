@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Welcome() {
+function Welcome(props) {
     return (
         <div>
-            <h1>welcome universe</h1>
+            <h1>welcome {props.name} </h1>
         </div>
     )
 }
