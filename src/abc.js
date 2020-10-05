@@ -1,10 +1,18 @@
-import React from 'react'
+import React,{useState} from 'react'
 
 function Abc() {
+
+    let initialState = 0;
+    const [Count, setCount] = useState(initialState)
+
     return (
-        <React.Fragment>
-            <h1>hello abc</h1>
-        </React.Fragment>
+        <div>
+            <h1>counter : {Count}</h1>
+            <button onClick={()=>setCount(initialState)}>Reset</button>
+            <button onClick={()=>setCount(Count + 1)}>Plus</button>
+            <button onClick={()=>setCount(Count - 1)}>Minus</button>
+            <button onClick={()=>setCount(Count + 5)}>Plus 5</button>
+        </div>
     )
 }
 
