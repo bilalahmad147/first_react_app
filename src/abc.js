@@ -1,17 +1,22 @@
-import React,{useState} from 'react'
+import React from 'react'
 
 function Abc() {
 
-    let initialState = 0;
-    const [Count, setCount] = useState(initialState)
+    let nameObj = {
+        firstName: "bilal",
+        lastName: "ahmad",
+        rollNo: 15
+    }
 
     return (
         <div>
-            <h1>counter : {Count}</h1>
-            <button onClick={()=>setCount(initialState)}>Reset</button>
-            <button onClick={()=>setCount(Count + 1)}>Plus</button>
-            <button onClick={()=>setCount(Count - 1)}>Minus</button>
-            <button onClick={()=>setCount(Count + 5)}>Plus 5</button>
+            {nameObj.map(
+                (obj) => {
+                    return (
+                        <h1>{obj}</h1>
+                    )
+                }
+            )}
         </div>
     )
 }
