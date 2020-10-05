@@ -10,13 +10,7 @@ function Abc() {
 
     return (
         <div>
-            {nameObj.map(
-                (obj) => {
-                    return (
-                        <h1>{obj}</h1>
-                    )
-                }
-            )}
+            <h1>hello world</h1>
         </div>
     )
 }
