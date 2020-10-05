@@ -5,10 +5,10 @@ function Form1() {
     let [userName, setuserName] = useState('');
     let [userEmail, setuserEmail] = useState('');
 
-    const changeUserName = (e) => {
+    const changeUserName = e => {
         setuserName(userName = e.target.value)
     }
-    const changeUserEmail = (e) => {
+    const changeUserEmail = e => {
         setuserEmail(userEmail = e.target.value)
     }
     const submitHandle = e => {
