@@ -1,18 +1,14 @@
 import React from 'react';
 import './App.css';
-import CountContext from './Components/CountContext';
-import CounterContext from './Components/CounterContext';
+import FetchUseEffect from './Components/FetchUseEffect';
+
 
 function App() {
 
-  let initValue = 0;
-
   return (
-    <CounterContext.Provider value={initValue}>
       <div className="App">
-          <CountContext />
+        <FetchUseEffect />
       </div>
-    </CounterContext.Provider>
   );
 }
 
