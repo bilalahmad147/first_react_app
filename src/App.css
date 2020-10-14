@@ -1,6 +1,5 @@
-.App {
-  text-align: center;
-}
-.list1{
-  color: red;
+.target{
+  width: 100px;
+  height: 100px;
+  background-color: red;
 }
