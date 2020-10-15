@@ -1,13 +1,12 @@
 import React from 'react';
 import './App.css';
-import Animation from './Components/Animation'
 
 
 function App() {
 
   return (
       <div className="App">
-        <Animation />
+      <h1>hello world</h1>
       </div>
       
   );
