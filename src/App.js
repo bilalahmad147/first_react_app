@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Child1 from './Components/Child1';
 import { connect } from 'react-redux'
@@ -6,11 +6,12 @@ import { connect } from 'react-redux'
 
 function App() {
 
-  console.log("redux-data",)
+  const [state, setstate] = useState(0)
+  console.log(state)
 
   return (
     <div className='App'>
-      <Child1 />
+      <Child1 name={state} />
     </div>
   );
 }
@@ -20,4 +21,5 @@ const stateToProp = (state) => ({
   email: 'bilal@gmail.com'
 })
 
-export default connect(stateToProp,null)(App);
+
+export default connect(stateToProp, null)(App);
