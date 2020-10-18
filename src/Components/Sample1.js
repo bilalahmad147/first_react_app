@@ -2,14 +2,12 @@ import React,{useState} from 'react'
 
 function Sample1() {
 
-    let num = 5;
-    const [num, setNum] = useState(num)
-    console.log(num)
+    let [num, setNum] = useState(0)
 
     return (
         <div>
             <h1>{num}</h1>
-            <button onClick={()=>{setNum(num++)}}>Plus</button>
+            <button onClick={()=>{setNum(++num)}}>Plus</button>
         </div>
     )
 }
